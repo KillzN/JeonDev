@@ -20,7 +20,7 @@ const handler = async (m, { conn, args }) => {
         MX: 0, // México tiene la misma hora
         CO: 1, // Colombia tiene una hora más
         CL: 2, // Chile tiene dos horas más
-        AR: 3  // Argentina tiene tres horas más
+        AR: 2  // Argentina tiene tres horas más
     };
 
     if (!(pais in diferenciasHorarias)) {
@@ -58,7 +58,7 @@ const handler = async (m, { conn, args }) => {
 🇲🇽 𝐌𝐄𝐗𝐈𝐂𝐎 : ${formatTime(horasEnPais[0])}
 🇨🇴 𝐂𝐎𝐋𝐎𝐌𝐁𝐈𝐀 : ${formatTime(horasEnPais[1])}
 🇨🇱 𝐂𝐇𝐈𝐋𝐄 : ${formatTime(horasEnPais[2])}
-🇦🇷 𝐀𝐑𝐆𝐄𝐍𝐓𝐈𝐍𝐀 : ${formatTime(horasEnPais[3])}
+🇦🇷 𝐀𝐑𝐆𝐄𝐍𝐓𝐈𝐍𝐀 : ${formatTime(horasEnPais[2])}
 
 𝐇𝐎𝐑𝐀 𝐀𝐂𝐓𝐔𝐀𝐋 𝐄𝐍 𝐌𝐄𝐗𝐈𝐂𝐎🇲🇽 : ${horaActual}
 
